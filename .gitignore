@@ -399,3 +399,4 @@ FodyWeavers.xsd
 
 # Ignore mod output
 mod/plugins/
+lib/
