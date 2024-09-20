@@ -1,0 +1,7 @@
+{
+    "name": "TestMod",
+    "version_number": "1.0.0",
+    "website_url": "https://github.com/alduris/AirframeModding",
+    "description": "Playing around with Airframe Ultra modding",
+    "dependencies": []
+}
