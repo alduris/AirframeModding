@@ -9,26 +9,13 @@ using System.Security.Permissions;
 
 namespace TestMod;
 
-[BepInPlugin("com.author.testmod", "Test Mod", "0.1.0")]
+[BepInPlugin("alduris.testmod", "Test Mod", "1.0.0")]
 sealed class Plugin : BaseUnityPlugin
 {
     public static new ManualLogSource Logger;
-    bool IsInit;
 
     public void OnEnable()
     {
         Logger = base.Logger;
-        On.RainWorld.OnModsInit += OnModsInit;
-    }
-
-    private void OnModsInit(On.RainWorld.orig_OnModsInit orig, RainWorld self)
-    {
-        orig(self);
-
-        if (IsInit) return;
-        IsInit = true;
-
-        // Initialize assets, your mod config, and anything that uses RainWorld here
-        Logger.LogDebug("Hello world!");
     }
 }
